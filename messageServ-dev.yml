@@ -1,26 +1,4 @@
-server:
-  port: 4101
-
-spring: 
-  application:
-    name: MessageService
-  redis: 
-    database: 0
-    #本机ip
-    host: 192.168.1.162
-    #端口默认6379
-    port: 6379
-    lettuce:
-      pool:
-        #最大连接数、最小空闲连接、最大空闲连接、最大阻塞等待时间（使用负值表示没有限制）
-        max-active: 1000
-        min-idle: 10
-        max-idle: 500
-        max-wait: 5000ms
-    #连接超时时间
-    timeout: 10000ms
-
-eureka: 
-  client: 
-    serviceUrl: #注册中心的地址
-      defaultZone: http://127.0.0.1:3201/eureka/
+book:
+  name: java language
+  auther: chenduo
+  price: 100
